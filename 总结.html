@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html总结</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"><!--html网页自适应-->
+        <meta name="keywords" content="总结,自己,wolf,html"><!--为搜索提引擎供关键字-->
+        <meta name="description" content="自己总结的html"><!--描述网页的内容-->
+        <meta name="author" content="郝宇超"><!--定义网页的作者--> 
+        <link rel="icon" type="image/x-icon" href="photo.png"><!--链接html左上角的图像 后缀为ico,png,gif-->
+        <link rel="stylesheet" type="text/css" href="p.css">
+        <style type="text/css" media="screen and (min-width:512px) and (max-width:1024px)">
+            body {
+                background-image: url("photo.png");/*在像素范围宽度为512像素到1024像素之间，显示另外一种样式*/
+            }
+        </style>
+        <style>
+            table{
+                border:1px solid blcak;/*设置表格边框为1px，直线，黑色*/
+                border-collapse:collapse;/*取消边框之间的缝隙*/
+            }
+            th{
+                background:grey;
+                color:white;
+            }
+            th,td{
+                border:1px solid red;    padding:5px;/*padding是调节表格的内边距*/
+            }
+            caption{
+                padding:10px;
+            }
+        </style>
+        <style>
+            p.word{color:blue;font-size:20px;}</style>
+          <script type="text/javascript">
+            document.write("相濡以沫不如相见江湖");//js写入网页文字
+        </script>
+        <noscript>
+            <p>抱歉，浏览器不支持 JavaScript!</p>
+            <p>不支持 JavaScript 的浏览器会使用 noscript标签中定义的内容来替代。</p>
+        </noscript>
+        <!--这些标签可用在 head 部分：<base>, <link>, <meta>, <script>, <style>，<title>。 title为必须的-->
+    </head>
+    <body>
+    <p id="god"><b>有趣的灵魂万里挑一</b></p>
+    <script src="相濡以沫.js">/*链接外部的js文件*/</script>
+        <pre>&#60;字符实体&#62;</pre>
+        <addr title="标签用于定义计算机代码片段。"><code>(code标签)</code></addr> <br><!--br为换行-->
+        <p><span>字符实体</span></p>
+        <q>引用</q><!--加双引号-->
+    <blockquote>q 元素在本质上与 blockquote 是一样的。不同之处在于它们的显示和应用。q 元素通常用于简短的行内引用，浏览器的默认样式是为其加上双引号；
+    而对于内容比较长的引用，建议使用 blockquote 元素。在默认情况下，浏览器对 blockquote 元素的处理通常是添加缩进区分而已。</blockquote>
+    
+    <abbr title="通过对缩写进行标记，能够为浏览器、拼写检查和搜索引擎提供有用的信息。配合全局属性 title，可以指定该缩写代表的完整含义。">(abbr标签)</abbr>
+    <br><abbr title="cite 元素用于定义作品（比如书籍、歌曲、电影、电视节目、绘画、雕塑等）的标题。默认为斜体">(addr标签)</abbr><cite>《wolf》</cite><br>
+    <abbr title="表现定义中的术语。术语又称技术名词，是在特定专业领域中一般概念的词语指称，一个术语表示一个概念。">(dfn标签)</abbr><dfn>HTML</dfn>是一门用于创建网页的标准标记语言。
+    <address>
+        <abbr title="标签定义文档或文章的作者/拥有者的联系信息。">(address标签)</abbr><br>
+        邮箱:731546521@qq.com
+    </address>
+
+    <p class="word"><ruby>魑<rp>(</rp><rt>chi</rt><rp>)</rp></ruby>
+        <ruby>魅<rp>(</rp><rt>mei</rt><rp>)</rp></ruby>
+        <ruby>魍<rp>(</rp><rt>wang</rt><rp>)</rp></ruby>
+        <ruby>魉<rp>(</rp><rt>liang</rt><rp>)</rp></ruby></p>
+    (<abbr title="ruby标签定义注音符号。ruby 元素需要与 rt 元素和 rp 元素搭配使用.">ruby </abbr>,<abbr title="rp元素用来标记当浏览器不支持ruby元素时所显示的内容。"> rp </abbr>,<abbr title="rt元素用来标记注音符号"> rt </abbr>)
+     <br>
+    <abbr title="bdo标签修改默认的文本方向。属性为:dir,值为ltr(从左到右)、rtl(从右到左)">bdo标签</abbr>
+    <p>正常显示 Hello World!</p>
+    <bdo dir="rtl">
+    Hello World!
+    </bdo>
+    <table>
+        <colgroup>
+            <col  span="1" style="background:red">
+            <col span="2" style="background:blue">
+            </colgroup>
+<!--这里是内联样式表 style为全局属性--><!--colgroup标签用于对表格中的列进行组合，以便对其进行格式化，此标签只能在table中使用。colgroup标签和col元素批量设置表格一列或多列的样式，col中的属性span表示横跨几列，值为数值-->
+        <caption>简介</caption><!--表格的标题必须紧挨着tabtle-->
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>姓别</th>
+            <th>随便说</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>郝宇超</td>
+            <td>男</td>
+            <td>没有</td>
+        </tr>
+        <tr>
+            <td>自己</td>
+            <td>男</td>
+            <td>无</td>
+        </tr>
+    </tbody>
+    <tfoot style="background:yellow;">
+        <tr>
+            <td colspan="3">最终解释权归官方所有</td>
+        </tr>
+    </tfoot>
+    <!--thead,tbody,tfoot分别为表头，表单，表尾，th和td元素的属性colspan为横跨的列数值为数值，rowspan为横跨的行数值为数值-->
+    </table><!--表格，tr为一行，th表头，td表元-->
+    <!--表单--><!--autocomplete为自动填充,值为off/on，input的属性autocomplete会覆盖form的设置；input的属性value是默认值，值为任何字符-->
+    <!--autofocus自动聚焦，页面一加载光标自动聚焦在其上；input和button都有disabled禁用元素不会提交到服务器，使得元素无法修改->
+    <!--readonly禁止修改元素,会提交到服务器，只是没法输入-->
+    <!--fieldset将网页分组；legend必须作为fieldset的第一个子元素-->
+    <!--select 元素中的<option>标签用于定义列表中的可用选项。 option的属性value指发给服务器的选项值-->
+    <!--<optgroup> 标签用于为下拉列表的选项进行分组。属性label值为text 指定该分组的标签;属性disabled值为disabled 指定该选项被禁用-->    
+        <form target="_blank" action="ceshi.php" method="post" autocomplete="off">
+<fieldset><legend>名字</legend>
+        <label>名字:<input autofocus type="text" name="name"/></label><br>点名字试试，label会自动聚焦到其所对应的空中;for的值为所对应id值<br>
+        <label for="name">名字:</label><input type="text" name="name" id="name"/><br>
+</fieldset> 
+<filedset>
+    <select>
+        <optgroup label="HTML 块级元素(block element)">
+            <option>address,article,aside,blockquote,canvas,dd,div,dl,dt,fieldset</option>
+            <option>figcaption,figure,footer,form,(h1~h6),header,hr,li,main,nav </option>
+            <option>noscript,ol,output,p,pre,section,table,tfoot,ul,video</option>
+        </optgroup>
+        <optgroup label=" HTML 行内元素(inline element)">
+            <option>a,abbr,acronym,b,bdo,big,br,button,cite,code,dfn,</option>
+            <option>em,i,img,input,kbd,label,map,object,q,samp,script,</option>
+            <option>select,small,span,strong,sub,sup,textarea,time,tt,var</option>
+        </optgroup>
+    </select>
+</filedset>
+<fieldset> <legend>性别</legend>
+        <label for="sex">性别:
+            <select name="sex">
+                <option value="male">男</option>
+                <option value="female">女</option>
+            </select>
+        </label>
+        性别:<input type="text" name="sex" autocomplete="on"/><br>
+        性别:<input type="text" name="sex" value="男" disabled/><br>
+        性别:<input type="text" name="sex" value="男" readonly><br>
+        name一样<label><input type="radio" name="sex" value="male">男</label>
+                <label><input type="radio" name="sex" value="female">女</label>
+                <br>
+        name不一样<label><input type="radio" name="sex0" value="male">男</label>
+                <label><input type="radio" name="sex1" value="female">女</label>
+<!--radio属性后的name必须一样才能实现单选，如果name不一样则不会互斥-->
+ </fieldset>
+<fieldset>  
+        邮箱:<input type="text" name="email"/><br>
+</fieldset>       
+        <button type="submit">提交</button>
+        <input type="submit" value="提交">
+        <button type="reset">重写</button>
+        <input type="reset" value="重写">
+        <button type="button">点击无效果</button>
+        <input type="button" value="点击无效果">
+        <input type="button" onclick="wolf()" value="点我">
+        <script>
+	function wolf(){
+	confirm("恭喜你，你点的没错！");
+	prompt("哇，恭喜你，你点的没错！");
+	alert("耶，恭喜你，你点的没错！");
+/*js的三种弹框形式*/
+}
+        </script>
+    </form><br>
+    <a href="ceshi.html" target="_blank">ceshi</a>
+</body>
+</html>
